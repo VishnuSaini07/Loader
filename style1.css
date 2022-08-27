@@ -1,0 +1,46 @@
+span:nth-child(2) {
+  background-color: #ff7a00;
+  transform: scale(0.9);
+}
+
+span:nth-child(2)::before {
+    animation-delay: 0.4s;
+}
+
+span:nth-child(3) {
+  background-color: #28df99;
+  transform: scale(0.8);
+}
+
+span:nth-child(3)::before {
+    animation-delay: 0.6s;
+}
+
+span:nth-child(4) {
+  background-color: #81b214;
+  transform: scale(0.7);
+}
+
+span:nth-child(4)::before {
+    animation-delay: 1s;
+}
+
+span:last-child {
+  background-color: #f09ae9;
+  transform: scale(0.6);
+}
+
+span:last-child::before {
+  animation-delay: 1s;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
